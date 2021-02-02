@@ -95,7 +95,22 @@ genderView(usersArray);
 const data = genderView(usersArray);
 
 const genderCount = data => {
-  // Your code goes here ...
+  const genderCount = data => {
+    let femaleCount = 0
+    let malesCount = 0
+
+    let females = data.femaleUser
+    for(let female of females){
+      femalesCount +=1
+    }
+
+    let males = data.maleUser
+    for(let male of males) {
+      malesCount += 1
+    }
+  }
+  console.log(`Females: ${femalesCount}`)
+  console.log(`Males: ${malesCount}`)
 };
 
 genderCount(data);
